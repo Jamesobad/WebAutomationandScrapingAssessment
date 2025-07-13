@@ -1,5 +1,5 @@
 "# WebAutomationandScrapingAssessment" 
-# Selenium Laptop Scraper
+# Playwright Laptop Scraper
 
 This project scrapes laptop product data from [webscraper.io test site](https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops) using Selenium. It collects product details including title, price, rating, review count, description, and saves the results to a JSON file.
 
