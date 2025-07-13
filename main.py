@@ -103,7 +103,7 @@ if __name__ == "__main__":
 # BASE_URL = "https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops"
 # OUTPUT_FILE = "laptops_data_selenium.json"
 #
-# # Setup headless browser
+
 # def init_browser():
 #     options = Options()
 #     options.add_argument("--headless=new")  # For latest Chrome
@@ -111,7 +111,6 @@ if __name__ == "__main__":
 #     options.add_argument("--no-sandbox")
 #     return webdriver.Chrome(options=options)
 #
-# # Extract data from one product card
 # def extract_product_info(card):
 #     try:
 #         title_el = card.find_element(By.CSS_SELECTOR, 'a.title')
@@ -137,8 +136,7 @@ if __name__ == "__main__":
 #     except Exception as e:
 #         print("Error extracting product info:", e)
 #         return None
-#
-# # Extract description from product detail page
+
 # def extract_description(driver, url):
 #     try:
 #         driver.get(url)
@@ -151,7 +149,7 @@ if __name__ == "__main__":
 #         print(f"Error getting description for {url}:", e)
 #         return ""
 #
-# # Main scraping function
+
 # def scrape_site():
 #     driver = init_browser()
 #     driver.get(BASE_URL)
@@ -173,8 +171,7 @@ if __name__ == "__main__":
 #                 description = extract_description(driver, product["product_url"])
 #                 product["description"] = description
 #                 all_products.append(product)
-#
-#         # Try to go to next page
+
 #         try:
 #             next_button = driver.find_element(By.CSS_SELECTOR, "li.next > a")
 #             next_button.click()
